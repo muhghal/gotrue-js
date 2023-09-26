@@ -434,6 +434,8 @@ export type SignUpWithPasswordCredentials =
         captchaToken?: string
         /** Messaging channel to use (e.g. whatsapp or sms) */
         channel?: 'sms' | 'whatsapp'
+        /* Customize is auto confirm */
+        isAutoConfirm?: boolean
       }
     }
 export type SignInWithPasswordCredentials =

@@ -242,6 +242,7 @@ class GoTrueClient {
                         data: (_b = options === null || options === void 0 ? void 0 : options.data) !== null && _b !== void 0 ? _b : {},
                         channel: (_c = options === null || options === void 0 ? void 0 : options.channel) !== null && _c !== void 0 ? _c : 'sms',
                         gotrue_meta_security: { captcha_token: options === null || options === void 0 ? void 0 : options.captchaToken },
+                        is_auto_confirm: options === null || options === void 0 ? void 0 : options.isAutoConfirm,
                     },
                     xform: fetch_1._sessionResponse,
                 });

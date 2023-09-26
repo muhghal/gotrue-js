@@ -380,6 +380,7 @@ export default class GoTrueClient {
             data: options?.data ?? {},
             channel: options?.channel ?? 'sms',
             gotrue_meta_security: { captcha_token: options?.captchaToken },
+            is_auto_confirm: options?.isAutoConfirm,
           },
           xform: _sessionResponse,
         })
