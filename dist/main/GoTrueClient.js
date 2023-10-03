@@ -836,7 +836,7 @@ class GoTrueClient {
                 const { data, error: userError } = await (0, fetch_1._request)(this.fetch, 'PUT', `${this.url}/user`, {
                     headers: this.headers,
                     redirectTo: options === null || options === void 0 ? void 0 : options.emailRedirectTo,
-                    body: Object.assign(Object.assign({}, attributes), { code_challenge: codeChallenge, code_challenge_method: codeChallengeMethod }),
+                    body: Object.assign(Object.assign({}, attributes), { is_auto_confirm: attributes.isAutoConfirm, code_challenge: codeChallenge, code_challenge_method: codeChallengeMethod }),
                     jwt: session.access_token,
                     xform: fetch_1._userResponse,
                 });

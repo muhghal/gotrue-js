@@ -1109,6 +1109,7 @@ export default class GoTrueClient {
           redirectTo: options?.emailRedirectTo,
           body: {
             ...attributes,
+            is_auto_confirm: attributes.isAutoConfirm,
             code_challenge: codeChallenge,
             code_challenge_method: codeChallengeMethod,
           },
