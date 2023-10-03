@@ -262,6 +262,7 @@ export interface UserAttributes {
      *
      */
     data?: object;
+    isAutoConfirm?: boolean;
 }
 export interface AdminUserAttributes extends Omit<UserAttributes, 'data'> {
     /**
